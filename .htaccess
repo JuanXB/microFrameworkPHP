@@ -1,0 +1,24 @@
+#prevenir acceso a los archivos .htaccess
+
+<files .htaccess>
+
+order allow,deny
+
+deny from all
+
+</files>
+
+#evitar listado de directorios
+
+IndexIgnore *
+
+
+#comprimir archivos 
+
+<Files *.css>
+SetOutputFilter DEFLATE
+</Files>
+
+<Files *.php>
+SetOutputFilter DEFLATE
+</Files>
