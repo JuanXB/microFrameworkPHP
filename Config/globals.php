@@ -1,3 +1,4 @@
 <?php
-define("DEFAULT_CONTROLLER", "BasicController"); //Controlador por defecto.
-define("DEFAULT_ACTION", "app");
+define("DEFAULT_CONTROLLER", "Basic"); //Controlador por defecto.
+define("DEFAULT_TITLE_NAME", "Home");
+define("DEFAULT_ACTION", "home");

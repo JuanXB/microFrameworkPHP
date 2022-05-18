@@ -10,10 +10,10 @@ class FrontControllerAdministrator
     //Crear nombre del fichero controlador.
     $controller = ucwords($controller) . 'Controller';
     //Ruta del controlador.
-    $strFileController = 'controller/' . $controller . '.php';
+    $strFileController = 'Controller/' . $controller . '.php';
 
     if (!is_file($strFileController)) {
-      $strFileController = 'controller/' . ucwords(DEFAULT_CONTROLLER) . 'Controller';
+      $strFileController = 'Controller/' . ucwords(DEFAULT_CONTROLLER) . 'Controller';
     }
 
     //Se llama al archivo del controlador.

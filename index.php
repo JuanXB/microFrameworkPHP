@@ -2,9 +2,9 @@
 //Configuracion globales por defecto.
 require_once "config/globals.php";
 //Controlador basico.
-require_once "core/BasicController.php";
+require_once 'Controller/BasicController.php';
 // Funciones para el controlador frontal.
-require_once 'core/FrontControllerAdm.php';
+require_once 'Controller/FrontControllerAdm.php';
 $adminController = new FrontControllerAdministrator();
 
 //Cargamos nuestros controladores y las acciones.
@@ -21,9 +21,7 @@ if (isset($_GET['controller'])) {
 }
 
 //Cargamos las vistas.
-if ($Controller->view != 'app') {
 
-  require_once "view/inc_header.php";
-}
-require_once "view/" . $Controller->view . ".php";
-require_once "view/inc_footer.php";
+require_once "Views/inc_header.php";
+require_once "Views/" . $Controller->view . ".php";
+require_once "Views/inc_footer.php";
