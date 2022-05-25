@@ -6,7 +6,7 @@ class BasicController
 
   public function __construct()
   {
-    require_once "Config/Connect.php";
+    require_once "database/Connect.php";
     require_once "Model/BasicEntity.php";
     require_once "Model/BasicModel.php";
 

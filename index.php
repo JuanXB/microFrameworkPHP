@@ -22,6 +22,6 @@ if (isset($_GET['controller'])) {
 
 //Cargamos las vistas.
 
-require_once "Views/inc_header.php";
-require_once "Views/" . $Controller->view . ".php";
-require_once "Views/inc_footer.php";
+require_once "views/inc_header.php";
+require_once "views/" . $Controller->view . ".php";
+require_once "views/inc_footer.php";
